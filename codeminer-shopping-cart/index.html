@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeminer - Shopping Cart with VanillaJS</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="main">
+      <div class="handleChange">
+        <div class="item">
+          <div class="itemFruit">
+            <span class="itemName">Apple</span>
+            <input name="apple" type="number" data-js="qtdFruit" min="0" value="0"> kg
+          </div>          
+          <span>$ <span data-js="totalApple"></span></span>
+        </div>
+        <div class="item">
+          <div class="itemFruit">
+            <span class="itemName">Banana</span>
+            <input name="banana" type="number" data-js="qtdFruit" min="0" value="0"> kg
+          </div>          
+          <span>$ <span data-js="totalBanana"></span></span>
+        </div>
+        <div class="item">
+          <div class="itemFruit">
+            <span class="itemName">Orange</span>
+            <input name="orange" type="number" data-js="qtdFruit" min="0" value="0"> kg
+          </div>          
+          <span>$ <span data-js="totalOrange"></span></span>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="infoPrice">
+        <div class="item">
+          <span class="itemName">Subtotal</span>
+          <span>$ <span data-js="subtotal"></span></span>
+        </div>
+
+        <div class="item">
+          <span class="itemName">Shipping</span>
+          <span>$ <span data-js="shipping"></span></span>
+        </div>
+
+        <div class="item">
+          <!-- <div class="itemFruit"> -->
+            <span class="itemName">Coupon <span data-js="receiveNameCoupon"></span></span>
+            <input type="button" value="Remove" data-js="removeCoupon">
+          <!-- </div>           -->
+          <span class="couponInfo">- $ <span data-js="totalDiscount"></span> <span data-js="benefitDiscount"></span></span>
+        </div>
+
+        <div class="item itemTotal">
+          <span class="itemName">Total</span>
+          <span>$ <span data-js="total"></span></span>
+        </div>
+        
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="insertCoupon">
+        <input type="text" data-js="inputCoupon" placeholder="Coupon code">
+        <input type="button" value="Apply" data-js="submitCoupon">
+      </div>
+    </div>
+
+    <div class="purchase">
+      <button data-js="purchaseButton">Purchase</button>
+    </div>
+
+    <footer>
+      <a href="../index.html"><img src="../assets/favicon/apple-touch-icon.png" alt="Ebra Developer"></a>
+      <a href="../index.html"><span>Ebra Developer</span></a>
+    </footer>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

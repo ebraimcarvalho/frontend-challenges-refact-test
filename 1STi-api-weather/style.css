@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(0deg, rgb(132, 165, 255) 13%, rgb(86, 126, 255) 100%);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.top {
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.top h1 {
+  font-size: 3rem;
+}
+
+.divShow {
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+  color: gray;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.divShow p {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.divShow p:first-of-type {
+  color: rgba(0,0,0, 0.6);
+  font-weight: 500;
+}
+
+.divShow p:last-of-type {
+  margin: 5px 0;
+}
+
+.divShow h3 {
+  text-align: left;
+  padding-left: 40px;
+  margin: 10px 0 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(0,0,0, 0.6);
+}
+
+.divShow p span {
+  margin-right: 10px;
+}
+
+.divShow hr {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid rgba(25, 0, 255, 0.596);
+  margin-top: 10px;
+}
+
+.divDays {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 15px;
+}
+
+.divDays div {
+  margin: 0 5px;
+}
+
+.top input {
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border: 1px solid darkgrey;
+  outline: none;
+  font-weight: 100;
+  border-radius: 5px;
+}
+
+.citys {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.citys h3 {
+  color: white;
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-weight: 300;
+}
+
+.table td {
+  font-weight: 500;
+}
+
+th, td {
+  min-width: 60px;
+}
+
+.table tr {
+  height: 30px;
+}
+
+footer {
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+@media (min-width: 500px) {
+  .top {
+    padding: 30px 20px;
+  }
+
+  .divShow {
+    width: 400px;
+  }
+
+  .top input {
+    width: 400px;
+  }
+}
