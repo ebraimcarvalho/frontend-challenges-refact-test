@@ -117,37 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"utils/projects.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.projects = void 0;
-var projects = [{
-  name: 'intro-component-with-signup-form-master',
-  linkChallenge: 'https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1'
-}, {
-  name: 'frontend-technical-test',
-  linkChallenge: 'https://github.com/ebraimcarvalho/frontend-challenges/blob/master/frontend-technical-test/README.md'
-}, {
-  name: 'base-apparel-coming-soon-master',
-  linkChallenge: 'https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0'
-}, {
-  name: 'codeminer-shopping-cart',
-  linkChallenge: 'https://github.com/ebraimcarvalho/frontend-challenges/blob/master/codeminer-shopping-cart/README.md'
-}, {
-  name: '1STi-api-weather',
-  linkChallenge: 'https://github.com/ebraimcarvalho/frontend-challenges/blob/master/1STi-api-weather/README.md'
-}, {
-  name: 'four-card-feature-section-master',
-  linkChallenge: 'https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK'
-}, {
-  name: 'addison-global-web-technical-ebraim',
-  linkChallenge: 'https://github.com/ebraimcarvalho/frontend-challenges/blob/master/addison-global-web-technical-ebraim/README.md'
-}];
-exports.projects = projects;
-},{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -219,37 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-var _projects = require("./utils/projects");
-
-require("../src/styles/style.css");
-
-var container = document.querySelector('[data-js="container"]');
-var markup = '';
-createMarkup(_projects.projects);
-containerAppendMarkup();
-
-function createMarkup(projects) {
-  projects.forEach(function (_ref, i) {
-    var name = _ref.name,
-        linkChallenge = _ref.linkChallenge;
-    markup += "<div class=\"card-project\">\n      <a href=\"../".concat(name, "/index.html\" target=\"_blank\">\n        <h4>").concat(i + 2, ". ").concat(formatName(name), "</h4>\n      </a>\n      <p class=\"card-project__description\">This is a challenge to improve my frontend skills! Technical details and more informations, you can access on page: \n        <a href=\"").concat(linkChallenge, "\" target=\"_blank\">Page of Challenge;</a> \n        Or access the \n        <a href=\"https://github.com/ebraimcarvalho/frontend-challenges/tree/master/").concat(name, "\" target=\"_blank\">Code page - Github</a>\n      </p>\n    </div>");
-  });
-  return markup;
-}
-
-function containerAppendMarkup() {
-  container.innerHTML += markup;
-}
-
-function formatName(name) {
-  return name.split('-').map(function (word) {
-    return word[0].toUpperCase() + word.slice(1);
-  }).join(' ');
-}
-},{"./utils/projects":"utils/projects.js","../src/styles/style.css":"styles/style.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -453,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/style.251b6741.js.map
