@@ -42,12 +42,12 @@ function renderNew() {
 function createElements(item) {
   let markup = `
     <div class="card">
-      <img src="${item.heroImageUrl}"/>
-      <h3>${item.name}</h3>
-      <p>${item.description}</p>
-      <div>
-        <button>${item.termsAndConditionsButtonText}</button>
-        <button>${item.joinNowButtonText}</button>
+      <img class="card__img" src="${item.heroImageUrl}"/>
+      <h3 class="card__name">${item.name}</h3>
+      <p class="card__description">${item.description}</p>
+      <div class="card__buttons-div">
+        <button class="card__button1">${item.termsAndConditionsButtonText}</button>
+        <button class="card__button2">${item.joinNowButtonText}</button>
       </div>
     </div>
   `;
