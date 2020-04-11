@@ -1,0 +1,17 @@
+{
+  "name": "ebradeveloper",
+  "version": "1.0.0",
+  "description": "Development of challenges for company vacancies, extracted from the https://github.com/felipefialho/frontend-challenges repository and tests for other companies not listed in the repo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
