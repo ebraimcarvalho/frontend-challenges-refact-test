@@ -2,7 +2,7 @@ const functions = require('../src/functions');
 
 describe('Test Functions', () => {
   test('adds 1 + 2 to equal 3', () => {
-    expect(functions.sum(1, 2)).toExist();
+    expect(functions.sum(1, 2)).toEqual(3);
   });
 
   test('adds 1 + 2 to equal 3', () => {
